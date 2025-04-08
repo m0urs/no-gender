@@ -10,6 +10,7 @@
      */
     { regExp: /jede[:*_]r/, replace: 'jeder' },
     { regExp: /ein[:*_]e/, replace: 'ein' },
+    { regExp: /Rom\*nja/, replace: 'Roma' },
     { regExp: /Sinti\*zze/, replace: 'Sinti' },
     { regExp: /Sint\*ezza/, replace: 'Sinti' },
 
