@@ -920,4 +920,21 @@ describe('no-gender - plural', () => {
       expect(document.body.innerHTML).toBe('Sie alle sind Mitarbeiter!')
     })
   })
+
+  describe('should find and replace "Sinti*zze Sint*ezza Rom*nja"', function () {
+    it('should find and replace "Sinti*zze Sint*ezza Rom*nja"', function () {
+      document.body.innerHTML = 'Sie alle sind Sinti*zze, Sint*ezza oder Rom*nja!'
+      searchAndDestroy()
+      expect(document.body.innerHTML).toBe('Sie alle sind Sinti, Sinti oder Roma!')
+    })
+  })
+
+  describe('should find and replace "Studentys and Mitarbeitys"', function () {
+    it('should find and replace "Studentys and Mitarbeitys"', function () {
+      document.body.innerHTML = 'Sie alle sind Studentys and Mitarbeitys!'
+      searchAndDestroy()
+      expect(document.body.innerHTML).toBe('Sie alle sind Studenten and Mitarbeiter!')
+    })
+  })
+
 })
