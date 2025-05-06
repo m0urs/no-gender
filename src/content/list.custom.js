@@ -14,6 +14,11 @@
     { regExp: /Sinti\*zze/, replace: 'Sinti' },
     { regExp: /Sint\*ezza/, replace: 'Sinti' },
     { regExp: /Studentys/, replace: 'Studenten' },
+    { regExp: /Studierende/, replace: 'Studenten' },
     { regExp: /Mitarbeitys/, replace: 'Mitarbeiter' },
+    { regExp: /Mitarbeitenden/, replace: 'Mitarbeiter' },
+    { regExp: /Mitarbeitende/, replace: 'Mitarbeiter' },
+    { regExp: /Forschenden/, replace: 'Forscher' },
+    { regExp: /Forschende/, replace: 'Forscher' },
   ]
 }(typeof window !== 'undefined' ? window : this))

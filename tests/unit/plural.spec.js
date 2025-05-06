@@ -961,4 +961,36 @@ describe('no-gender - plural', () => {
     })
   })
 
+describe('should find and replace "Studierende"', function () {
+    it('should find and replace "Studierende"', function () {
+      document.body.innerHTML = 'Sie alle sind Studierende!'
+      searchAndDestroy()
+      expect(document.body.innerHTML).toBe('Sie alle sind Studenten!')
+    })
+  })
+
+  describe('should find and replace "Mitarbeitende"', function () {
+    it('should find and replace "Mitarbeitende"', function () {
+      document.body.innerHTML = 'Liebe Mitarbeitende!'
+      searchAndDestroy()
+      expect(document.body.innerHTML).toBe('Liebe Mitarbeiter!')
+    })
+  })
+
+  describe('should find and replace "Forschende"', function () {
+    it('should find and replace "Forschende"', function () {
+      document.body.innerHTML = 'Die Forschende haben etwas entdeckt!'
+      searchAndDestroy()
+      expect(document.body.innerHTML).toBe('Die Forscher haben etwas entdeckt!')
+    })
+  })
+
+  describe('should find and replace "Forschenden"', function () {
+    it('should find and replace "Forschenden"', function () {
+      document.body.innerHTML = 'Die Forschenden haben etwas entdeckt!'
+      searchAndDestroy()
+      expect(document.body.innerHTML).toBe('Die Forscher haben etwas entdeckt!')
+    })    
+  })
+
 })
